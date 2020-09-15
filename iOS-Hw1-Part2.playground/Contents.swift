@@ -1,6 +1,14 @@
 import UIKit
-
-
+var foods = ["Apples", "Grapes", "Chocolate", "Burgers"]
+foods.append("Pizza")
+print(foods)
+for food in foods
+{
+    print("I like \(food)")
+}
+if foods == ["Pizza"] {
+    print("yummPizza")
+}
 
 //: # 1️⃣ السؤال الاول
 /*:
@@ -22,7 +30,16 @@ import UIKit
 
 
 //: # 2️⃣  السؤال الثاني
-var numbers = [1,2,3,4,5,6,7,8,9,10]
+
+var Numbers = [1,2,3,4,5,6,7,8,9,10]
+var evenNumbers = [Int]()
+for number in 1...10  {
+    if number % 2 == 0{
+        evenNumbers.append(number)
+        continue
+    }
+}
+print(evenNumbers)
 /*:
 
 ##
@@ -56,4 +73,14 @@ var numbers = [1,2,3,4,5,6,7,8,9,10]
 
  
  */
-   
+
+
+for j in 1...5 {
+    for i in 1...10 {
+        print("\(i) X \(j) = \(i * j)")
+    }
+}
+
+
+
+
